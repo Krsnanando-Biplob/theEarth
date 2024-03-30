@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: black;
+    }
+    .sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 6em;
+      height: 6em;
+      background-color: yellow;
+      border-radius: 50%;
+      box-shadow: 0 0 3em rgb(225, 128, 0);
+      z-index: 1;
+    }
+    .planet {
+      position: absolute;
+      border-style: solid;
+      border-color: white transparent transparent;
+      border-width: 0.1em 0.1em 0 0;
+      border-radius: 50%;
+      animation: orbit linear infinite;
+    }
+    .mercury { animation-duration: 68.7s; }
+    .venus { animation-duration: 48.5s; }
+    .earth { animation-duration: 36.5s; }
+    .moon { animation-duration: 2.5s; }
+    .mars { animation-duration: 26.5s; }
+    .jupiter { animation-duration: 21s; }
+    .saturn { animation-duration: 17s; }
+    .uranus { animation-duration: 19s; }
+    .neptune { animation-duration: 15s; }
+    .pluto { animation-duration: 18s; }
+
+    @keyframes orbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .planet::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      animation: orbit linear infinite;
+      background-color: silver;
+    }
+    .mercury::before { top: 1.8em; right: 0.8em; width: 1.5em; height: 1.5em; }
+    .venus::before { top: 2em; right: 2em; width: 2em; height: 2em; }
+    .earth::before { top: 2.8em; right: 2.8em; width: 3em; height: 3em; background-color: aqua; }
+    .moon::before { top: 0.8em; right: 0.2em; width: 1.2em; height: 1.2em; background-color: silver; }
+    .mars::before { top: 5em; right: 3em; width: 3em; height: 3em; }
+    .jupiter::before { top: 5em; right: 5em; width: 5em; height: 5em; }
+    .saturn::before { top: 7.5em; right: 5em; width: 4.5em; height: 4.5em; }
+    .uranus::before { top: 9em; right: 6.5em; width: 4em; height: 4em; }
+    .neptune::before { top: 10em; right: 8em; width: 4em; height: 4em; }
+    .pluto::before { top: 11em; right: 10em; width: 4em; height: 4em; }
+  </style>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="planet mercury"></div>
+  <div class="planet venus"></div>
+  <div class="planet earth"></div>
+  <div class="planet moon"></div>
+  <div class="planet mars"></div>
+  <div class="planet jupiter"></div>
+  <div class="planet saturn"></div>
+  <div class="planet uranus"></div>
+  <div class="planet neptune"></div>
+  <div class="planet pluto"></div>
+</body>
+</html>
