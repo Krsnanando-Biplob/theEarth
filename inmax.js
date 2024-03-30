@@ -10,6 +10,8 @@ function creatStart(){
 
     start.style.top = Math.random() * 100 + '%'
     start.style.left = Math.random() * 100 + '%'
+    start.style.right = Math.random() * 100 + '%'
+    start.style.bottom = Math.random() * 100 + '%'
 
     container.appendChild(start)
   }
