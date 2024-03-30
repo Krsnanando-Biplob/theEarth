@@ -531,6 +531,7 @@ body {
     border-color: white transparent transparent;
     border-width: 0.1em 0.1em 0 0;
     border-radius: 50%;
+    overflow: hidden;
   }
   
   .mercury {
@@ -707,6 +708,7 @@ body {
     background-color: white;
     border-radius: 50%;
     z-index: -1;
+    
   }
 
 
