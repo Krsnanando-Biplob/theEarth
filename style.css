@@ -453,7 +453,7 @@ body {
 
 /* Media Queries for responsiveness */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   /* .container {
     min-height: 30em;
     width: 30em;
