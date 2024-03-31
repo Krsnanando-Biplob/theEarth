@@ -34,6 +34,26 @@
       border-radius: 50%;
       animation: orbit linear infinite;
     }
+
+    .mon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #fff; /* Color of the moon */
+    border-radius: 50%; /* Makes the moon shape round */
+    position: relative;
+}
+
+.mon::before {
+    content: '';
+    position: absolute;
+    width: 60px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #000; /* Color of the shadow */
+    border-radius: 50%; /* Makes the shadow round */
+    top: 0;
+    left: -20px; /* Adjust positioning as needed */
+}
+
     .mercury { animation-duration: 68.7s; }
     .venus { animation-duration: 48.5s; }
     .earth { animation-duration: 36.5s; }
@@ -67,6 +87,8 @@
     .uranus::before { top: 9em; right: 6.5em; width: 4em; height: 4em; }
     .neptune::before { top: 10em; right: 8em; width: 4em; height: 4em; }
     .pluto::before { top: 11em; right: 10em; width: 4em; height: 4em; }
+
+
   </style>
 </head>
 <body>
@@ -81,5 +103,9 @@
   <div class="planet uranus"></div>
   <div class="planet neptune"></div>
   <div class="planet pluto"></div>
+
+  <div class="mon">
+    
+  </div>
 </body>
 </html>
