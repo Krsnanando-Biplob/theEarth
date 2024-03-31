@@ -329,6 +329,8 @@ body {
   border-color: white transparent transparent;
   border-width: 0.1em 0.1em 0 0;
   border-radius: 50%;
+  /* transform: translate(-50%, -50%); */
+
 
 }
 
@@ -423,16 +425,16 @@ body {
 .mercury::before {
   top: 1.8em;
   right: 0.8em;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   background-color: rgb(230, 230, 230);
 }
 
 .venus::before {
   top: 2em;
   right: 2em;
-  width: 2em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
   background-color: rgb(255, 153, 51);
 }
 
@@ -445,10 +447,10 @@ body {
 }
 
 .moon::before {
-  top: 0.8em;
+  top: 0.7em;
   right: 0.2em;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.3em;
+  height: 1.3em;
   background-color: rgb(200, 200, 200);
 }
 
