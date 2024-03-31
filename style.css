@@ -1,3 +1,4 @@
+
 /* 
 
 body{
@@ -316,8 +317,8 @@ body {
   margin: 0;
   position: relative;
   font-size: 6px;
-  filter: brightness(100000%);
-  opacity: 1000;
+  /* filter: brightness(100000%); */
+  /* opacity: 1000; */
 
 
 }
